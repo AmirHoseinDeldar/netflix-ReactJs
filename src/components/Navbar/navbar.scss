@@ -3,13 +3,60 @@
 .navbar {
   color: white;
   font-style: 14px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-    img {
-      height: 45px;
+    height: 70px;
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 95px;
+      }
+      span {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin: 0 15px;
+      }
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .profile {
+        cursor: pointer;
+
+        .options {
+          display: none;
+          background-color: $main--color;
+          border-radius: 5px;
+        }
+        span {
+          padding: 10px;
+          cursor: pointer;
+        }
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
     }
   }
 }

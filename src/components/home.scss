@@ -1,5 +1,7 @@
 @import '../App.scss';
 .home {
   background-color: $main--color;
- 
+  img {
+    width: 100%;
+  }
 }

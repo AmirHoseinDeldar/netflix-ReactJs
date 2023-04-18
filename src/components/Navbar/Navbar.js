@@ -18,11 +18,17 @@ const Navbar = () => {
           <span>My List</span>
         </div>
         <div className='right'>
-          <Search />
+          <Search className='icon' />
           <span>Kids</span>
-          <Notifications />
+          <Notifications className='icon' />
           <img src={Profile} alt='' />
-          <ArrowDropDown />
+          <div className='profile'>
+            <ArrowDropDown className='icon' />
+            <div className='options'>
+              <span>Setting</span>
+              <span>LogeOut</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
