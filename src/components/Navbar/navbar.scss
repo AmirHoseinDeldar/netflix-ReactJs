@@ -1,0 +1,15 @@
+@import '../../App.scss';
+
+.navbar {
+  color: white;
+  font-style: 14px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    img {
+      height: 45px;
+    }
+  }
+}
