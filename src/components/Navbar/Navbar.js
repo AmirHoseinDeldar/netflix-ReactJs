@@ -1,10 +1,16 @@
 import { Search, Notifications, ArrowDropDown } from '@material-ui/icons';
 import './navbar.scss';
 import Profile from './129794616.jpg';
+import { useState } from 'react';
 // import netfelix from '.Netflix-logo-red-black-png.png';
 const Navbar = () => {
+  const [scroll, setScroll] = useState(false);
+  window.onscroll = () => {
+    setScroll(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
   return (
-    <div className='navbar'>
+    <div className={scroll ? 'navbar Scrolled' : 'navbar'}>
       <div className='container'>
         <div className='left'>
           <img

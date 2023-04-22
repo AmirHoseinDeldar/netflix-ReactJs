@@ -1,9 +1,11 @@
-import Home from './components/Home';
+// import Home from './components/Pages/Home';
 import './App.scss';
+import Watch from './components/Pages/watch/Watch';
 function App() {
   return (
     <div>
-      <Home />
+      <Watch />
+      {/* <Home /> */}
     </div>
   );
 }
