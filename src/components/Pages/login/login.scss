@@ -1,4 +1,6 @@
-.register {
+@import '../../../App.scss';
+
+.login {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
@@ -17,16 +19,6 @@
       .logo {
         height: 40px;
       }
-      .loginButton {
-        background-color: red;
-        border: none;
-        color: white;
-        border-radius: 5px;
-        padding: 8px 18px;
-        font-style: 20px;
-        font-weight: 500;
-        cursor: pointer;
-      }
     }
   }
   .container {
@@ -38,38 +30,41 @@
     align-items: center;
     justify-content: center;
     color: white;
-    h1 {
-      font-style: 50px;
-    }
-    h2 {
-      margin: 20px;
-    }
-    p {
-      font-style: 20px;
-    }
-    .input {
-      width: 50%;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 40px;
-      height: 50px;
+
+    form {
+      width: 300px;
+      height: 300px;
+      padding: 30px;
       border-radius: 5px;
+      background-color: $main--color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       input {
-        flex: 9;
-        height: 100%;
-        border: none;
-        padding: 0 10px;
-      }
-      .registerButton {
-        flex: 3;
-        height: 100%;
-        background-color: red;
-        border: none;
+        height: 40px;
+        border-radius: 5px;
+        background-color: gray;
         color: white;
-        font-size: 20px;
+        padding-left: 10px;
+        &::placeholder {
+          color: white;
+        }
+      }
+      button {
+        height: 40px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-style: 18px;
+        font-weight: 500;
         cursor: pointer;
+      }
+      span {
+        color: lightgray;
+        b {
+          clear: white;
+        }
       }
     }
   }

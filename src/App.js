@@ -1,10 +1,14 @@
 // import Home from './components/Pages/Home';
 import './App.scss';
-import Watch from './components/Pages/watch/Watch';
+import Login from './components/Pages/login/login';
+// import Register from './components/Pages/Register/Register';
+// import Watch from './components/Pages/watch/Watch';
 function App() {
   return (
     <div>
-      <Watch />
+      <Login />
+      {/* <Register /> */}
+      {/* <Watch /> */}
       {/* <Home /> */}
     </div>
   );
