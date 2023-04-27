@@ -50,6 +50,7 @@
           color: white;
         }
       }
+      .loginButton,
       button {
         height: 40px;
         border-radius: 5px;
@@ -57,7 +58,16 @@
         color: white;
         border: none;
         font-style: 18px;
-        font-weight: 500;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+      }
+      .signUp {
+        color: red;
+        background-color: inherit;
+        border: none;
+        font-style: 18px;
+        font-weight: 700;
         cursor: pointer;
       }
       span {

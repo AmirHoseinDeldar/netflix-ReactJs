@@ -2,6 +2,7 @@ import { Search, Notifications, ArrowDropDown } from '@material-ui/icons';
 import './navbar.scss';
 import Profile from './129794616.jpg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import netfelix from '.Netflix-logo-red-black-png.png';
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -18,6 +19,7 @@ const Navbar = () => {
             alt=''
           />
           <span>HomePage</span>
+
           <span>Series</span>
           <span>Movies</span>
           <span>New & Popular</span>
@@ -32,7 +34,9 @@ const Navbar = () => {
             <ArrowDropDown className='icon' />
             <div className='options'>
               <span>Setting</span>
-              <span>LogeOut</span>
+              <Link to='./Login' className='Link'>
+                <span>LogeOut</span>
+              </Link>
             </div>
           </div>
         </div>

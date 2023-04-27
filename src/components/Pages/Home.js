@@ -1,7 +1,7 @@
-import Featured from './Featured/Featured';
+import Featured from '../Featured/Featured';
 import './home.scss';
-import List from './List/List';
-import Navbar from './Navbar/Navbar';
+import List from '../List/List';
+import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
   return (
